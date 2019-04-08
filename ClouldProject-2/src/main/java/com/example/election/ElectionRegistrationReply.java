@@ -3,13 +3,13 @@ package com.example.election;
 import java.util.Date;
 import java.util.List;
 
-
-public class Election {
+public class ElectionRegistrationReply {
 	int Id;
 	Date startTime;
 	Date endTime;
 	List<String> listOfChoice;
 	int numberOfVotes;
+	String ElectionStatus;
 	public int getId() {
 		return Id;
 	}
@@ -40,6 +40,12 @@ public class Election {
 	public void setNumberOfVotes(int numberOfVotes) {
 		this.numberOfVotes = numberOfVotes;
 	}
-
+	public String getElectionStatus() {
+		return ElectionStatus;
+	}
+	public void setElectionStatus(String electionStatus) {
+		ElectionStatus = electionStatus;
+	}
 	
+
 }
